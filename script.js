@@ -26,19 +26,19 @@ function calc(){
     }
 
     if (operator === "+") {
-        const answer = parseInt(number1) + parseInt(number2);
+        const answer = parseFloat(number1) + parseFloat(number2);
         result.innerText = answer;
         number1 = answer;
     } else if (operator === "-") {
-        const answer = parseInt(number1) - parseInt(number2);
+        const answer = parseFloat(number1) - parseFloat(number2);
         result.innerText = answer;
         number1 = answer;
     } else if (operator === "x") {
-        const answer = parseInt(number1) * parseInt(number2);
+        const answer = parseFloat(number1) * parseFloat(number2);
         result.innerText = answer;
         number1 = answer;
     } else if (operator === "/") {
-        const answer = parseInt(number1) / parseInt(number2);
+        const answer = parseFloat(number1) / parseFloat(number2);
         result.innerText = answer;
         number1 = answer;
     }
