@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>New Calculator</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <h1 id="main">Calculator</h1><br>
+        <div class="calculator">
+            <br>
+            <div class="result">
+                <h1 id="number"></h1>
+            </div>
+            <button type="button" onclick="display(1)">1</button>
+            <button type="button" onclick="display(2)">2</button>
+            <button type="button" onclick="display(3)">3</button>
+            <button type="button" onclick="operate('+')">+</button><br>
+            <button type="button" onclick="display(4)">4</button>
+            <button type="button" onclick="display(5)">5</button>
+            <button type="button" onclick="display(6)">6</button>
+            <button type="button" onclick="operate('-')">-</button><br>
+            <button type="button" onclick="display(7)">7</button>
+            <button type="button" onclick="display(8)">8</button>
+            <button type="button" onclick="display(9)">9</button>
+            <button type="button" onclick="operate('x')">x</button><br>
+            <button type="button" onclick="display(0)">0</button>
+            <button type="button" onclick="operate('/')">÷</button>
+            <button type="button" onclick="calc()">=</button>
+            <button type="button" onclick="reset()">AC</button>
+        </div>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

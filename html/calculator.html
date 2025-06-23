@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <hr>
+        <div class="middle">
+            <input id="inp1" placeholder="First No." type="number">
+            <input id="inp2" placeholder="Second No." type="number"><br>
+        </div>
+        <div id="btns">
+            <button onclick="add()">+</button>
+            <button onclick="sub()">-</button>
+            <button onclick="mult()">X</button>
+            <button onclick="div()">/</button>
+        </div>
+        <h1 id="res"></h1>
+        <footer>
+            <h2><a href="/new-calculator.html">NEW VERSION</a></h2>
+        </footer>
+        </body>
+        <script>
+            const res = document.getElementById("res");
+            function add(){
+                const inp1 = document.getElementById("inp1").value;
+                const inp2 = document.getElementById("inp2").value;
+                res.innerText = Number(inp1)+Number(inp2);
+            }
+            function sub(){
+                const inp1 = document.getElementById("inp1").value;
+                const inp2 = document.getElementById("inp2").value;
+                res.innerText = Number(inp1)-Number(inp2);
+            }
+            function mult(){
+                const inp1 = document.getElementById("inp1").value;
+                const inp2 = document.getElementById("inp2").value;
+                res.innerText = Number(inp1)*Number(inp2);
+            }
+            function div(){
+                const inp1 = document.getElementById("inp1").value;
+                const inp2 = document.getElementById("inp2").value;
+                res.innerText = Number(inp1)/Number(inp2);
+            }
+        </script>
+</html>

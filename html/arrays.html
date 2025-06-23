@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style1.css">
+        <title>Array Testing</title>
+    </head>
+    <body>
+        <div class="center">
+            <h1>Array Testing</h1>
+            <div id="main">
+                <div id="arrayText"></div>
+            </div>
+            <div class="container">
+                <fieldset class="child">
+                    <legend>Add and Remove</legend>
+                    <input id="userInput" type="text" placeholder="Add Text">
+                    <br><button type="button" onclick="add()">Add</button>
+                    <br><button type="button" onclick="remove()">Remove Last Element</button>
+                </fieldset>
+                <fieldset class="child">
+                    <legend>Get by Index</legend>
+                    <input id="userNum" type="number" min="0" placeholder="Index (from 0)"><br>
+                    <button type="button" onclick="getIndex()">Get Element</button>
+                    <div id="numResult"></div>
+                </fieldset>
+            </div>
+        </div>
+        <script src="../js/index.js"></script>
+    </body>
+</html>
